@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contributing to CX-ASAP &mdash; cxasap 0.1.6 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="How the Code Functions" href="FLOWCHART.html" />
+    <link rel="prev" title="Requirements" href="USER.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: light blue" >
+            <a href="index.html">
+            <img src="_static/cxasap_logo.webp" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="USER.html">Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="USER.html#installation">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="USER.html#additional-installation-options-linux-and-mac-only">Additional Installation Options (Linux and Mac only)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="USER.html#running-the-code">Running the Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="USER.html#troubleshooting">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="USER.html#all-the-different-cx-asaps-explained">All the different CX-ASAPs explained</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Guide</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Contributing to CX-ASAP</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#ways-to-contribute">Ways to Contribute</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rules">Rules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-write-a-new-module">How to write a new module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-contribute-your-code">How to contribute your code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#questions">Questions</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Module Flowcharts</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="FLOWCHART.html">How the Code Functions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="FLOWCHART.html#legend">Legend</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FLOWCHART.html#modules">Modules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="FLOWCHART.html#adp-analysis-module">ADP Analysis Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FLOWCHART.html#cell-analysis-module">Cell Analysis Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FLOWCHART.html#cif-merge-module">CIF Merge Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FLOWCHART.html#cif-read-module">CIF Read Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FLOWCHART.html#instrument-cif-generation-module">Instrument CIF Generation Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FLOWCHART.html#molecule-transformation-module">Molecule Transformation Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FLOWCHART.html#platon-squeeze-module">PLATON Squeeze Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FLOWCHART.html#refinement-module">Refinement Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FLOWCHART.html#rotation-planes-module">Rotation Planes Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FLOWCHART.html#structural-analysis-module">Structural Analysis Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FLOWCHART.html#xds-cell-transformation-module">XDS Cell Transformation Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FLOWCHART.html#xds-reprocess-module">XDS Reprocess Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FLOWCHART.html#xprep-module">XPREP Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FLOWCHART.html#xprep-intensity-comparison-module">XPREP Intensity Comparison Module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="FLOWCHART.html#pipelines">Pipelines</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="FLOWCHART.html#how-job-specific-pipelines-work">How Job Specific Pipelines Work</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FLOWCHART.html#cxasap-pipeline-general">CXASAP Pipeline (General)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FLOWCHART.html#job-specific-pipeline">Job Specific Pipeline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FLOWCHART.html#rigaku-vt-pipeline">Rigaku VT Pipeline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FLOWCHART.html#variable-position-pipeline">Variable Position Pipeline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FLOWCHART.html#variable-temperature-pipeline-australian-synchrotron">Variable Temperature Pipeline (Australian Synchrotron)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Github Link</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/AustralianSynchrotron/cx-asap">cx-asap</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: light blue" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">cxasap</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Contributing to CX-ASAP</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/DEVELOPER.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="contributing-to-cx-asap">
+<h1>Contributing to CX-ASAP<a class="headerlink" href="#contributing-to-cx-asap" title="Permalink to this heading">¶</a></h1>
+<p><em>Welcome to the CX-ASAP team!</em> To maintain our code on GitHub, we need to ensure that there are no conflicts between code versions being worked on independently by collaborators. Please read the below guidelines if you are actively contributing.</p>
+<div class="section" id="ways-to-contribute">
+<h2>Ways to Contribute<a class="headerlink" href="#ways-to-contribute" title="Permalink to this heading">¶</a></h2>
+<p>Before contributing to this project, please familiarise yourself with git and be confident in its usage (see below).</p>
+<p>The main ways you can contribute to this project are by adding new modules/pipelines and fixing bugs/improving upon existing code.</p>
+<p>If you have an idea for a new module, you will need to add it into the commandline interface. This can be done by editing the file ‘cxasap.py’. Instructions for doing this are commented at the top of this script.</p>
+</div>
+<div class="section" id="rules">
+<h2>Rules<a class="headerlink" href="#rules" title="Permalink to this heading">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Please don’t delete existing modules.</p></li>
+<li><p>Never edit the master branch or the dev branch - always work on your own branch (forked from the dev branch).</p></li>
+<li><p>Never merge your edits into the master branch or the dev branch - please submit your code for review (instructions included in ‘CXASAP GitHub Guide’). This is to ensure that your edits do not break other sections of the code.</p></li>
+</ol>
+</div>
+<div class="section" id="how-to-write-a-new-module">
+<h2>How to write a new module<a class="headerlink" href="#how-to-write-a-new-module" title="Permalink to this heading">¶</a></h2>
+<p><strong>Step 1. Have a scan of the utils.py file</strong></p>
+<p>In the <em>system_files</em> folder, there is a python script called:</p>
+<p><code class="docutils literal notranslate"><span class="pre">utils.py</span></code></p>
+<p>It is a good idea to have a look at this file before writing any code within CX-ASAP, as it contains some common functions used throughout the software package to avoid repetitive code.</p>
+<p>In particular, the <em>Directory_Browse</em>, <em>File_Check</em>, <em>Cell_Import</em> and <em>File_Sorter</em> functions may be of use. Investigate the code currently in CX-ASAP for examples of how these functions should be used.</p>
+<p><strong>Step 2. Write your code :)</strong></p>
+<p>In the <em>system_files</em> folder, there is a python script called:</p>
+<p><code class="docutils literal notranslate"><span class="pre">class_template.py</span></code></p>
+<p>This is the easiest way to start writing code within CX-ASAP, as this template includes the standard yaml set up. Once you have found this file, write away :)</p>
+<p><strong>Step 3. Add your code to the commandline interface</strong></p>
+<p>First, open the file:</p>
+<p><code class="docutils literal notranslate"><span class="pre">cxasap.py</span></code></p>
+<p>You will need to import your code into this script.</p>
+<p>Then, you will need to figure out which of your input variables will need to be configurable by the user and import into the code using the conf.yaml file. Add these parameters into the below file found in <em>system_files</em>:</p>
+<p><code class="docutils literal notranslate"><span class="pre">parameter.yaml</span></code></p>
+<p>This yaml file will essentially store all of the required parameters as a <em>list</em></p>
+<p>First heading should be the name of your module or pipeline as you will call it in the commandline interface. After the heading, enter your required input parameters as a list</p>
+<p>You will then need to add a new <em>click command</em> - click is the python library used to create the commandline interface. There is a template for this at the top of the <em>cxasap.py</em> file.</p>
+<p>Make sure you fill out descriptions for your yaml parameters, and in the <em>run</em> function, create your class and call the functions from your module/pipeline. (If you are unsure, look at examples already in place for how to configure this)</p>
+<p>Finally, at the bottom of the <em>cxasap.py</em> file, add your new click command to the interface.</p>
+</div>
+<div class="section" id="how-to-contribute-your-code">
+<h2>How to contribute your code<a class="headerlink" href="#how-to-contribute-your-code" title="Permalink to this heading">¶</a></h2>
+<p><strong>CX-ASAP GitHub Structure</strong></p>
+<p>The master branch is for official releases, while the dev branch is for code that is in active development. Active contributors will each have their own branch forked from the dev branch rather than the master.</p>
+<p><strong>Step 1. Clone the repository onto your computer</strong></p>
+<p>Log into your GitHub account and navigate to the <a class="reference external" href="https://github.com/AustralianSynchrotron/cx-asap">cx-asap repo</a>.</p>
+<p>Go to the green <em>code</em> button and copy the link (you will use this to clone the repository). It is recommended that you clone from the dev branch if you are actively contributing.</p>
+<p>Clone by navigating in your terminal where you want the code to be and type the below:</p>
+<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/AustralianSynchrotron/cx-asap.git</span></code></p>
+<p><strong>Step 2. NEVER TOUCH THE MASTER BRANCH</strong></p>
+<p>Once you have CX-ASAP cloned to your computer, the first thing you should do is make a branch for your own changes. Do this by typing the below code (replace ‘your_name’ with your name for ease of identification)</p>
+<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">-b</span> <span class="pre">cxasap_your_name</span></code></p>
+<p>For example, if your name is Amy, please call your branch ‘cxasap_Amy’. This command both creates a new branch and also switches to it.</p>
+<p>Verify you are on your own branch by typing:</p>
+<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span></code></p>
+<p>There should be an asterisk next to the name of your new branch.</p>
+<p>Once you are on your new branch, check what files have been changed, add and commit frequently using the below commands:</p>
+<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code>
+<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">path/to/changed/file/here</span></code>
+<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">'enter</span> <span class="pre">descriptive</span> <span class="pre">message</span> <span class="pre">here'</span></code></p>
+<p>Ideally, these last two commands would be run for each individual file to ensure that the descriptive messages are written specifically for what changed in each file.</p>
+<p>If you have run the CX-ASAP test, do not add the altered test files to your branch! If you do, your changes likely won’t be accepted into the master branch :)</p>
+<p><strong>Step 3. Test your Changes</strong></p>
+<p>Before pushing your branch to GitHub, please run the ‘cxasap test’ command, to ensure that your changes do not break the primary functions of the software package :)</p>
+<p>As your new modules will likely not be included in this test command, either add it in, or ensure that you perform your own independent testing.</p>
+<p>There are also some unit tests built in. These will be run through the GitHub Actions when pushed to Git.</p>
+<p><strong>Step 4. Pushing your branch to GitHub</strong></p>
+<p>Once you are happy that your code works without bugs (to the best of your knowledge, there will always be secret mystery bugs), push your changes to GitHub.</p>
+<p>First you will need to configure Git so that it will always push changes to the current branch (which in this case, should be your own personal branch!). Do this by running the below command:</p>
+<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span> <span class="pre">--global</span> <span class="pre">push.default</span> <span class="pre">current</span></code></p>
+<p>Then you can push using the below command:</p>
+<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code></p>
+<p>Running this command will not actually change the master branch. Rather, your new branch will appear on GitHub as a separate branch.</p>
+<p><strong>Step 5. Requesting that your branch be merged into the master/dev branch</strong></p>
+<p>Your branch should be highlighted at the top with a green button that says ‘compare and pull request’. Click on this button and submit a new pull request. Otherwise you can navigate to ‘pull requests’ and set it up from scratch.</p>
+<p>In this request screen, you will need to write a small but detailed description of the changes you have made and select ‘Amy Thompson’ to be the reviewer.</p>
+<p>Once you have entered the required information, finalise the pull request, and Amy will handle the merge. This is to ensure that the additions are compatible with the dev branch and/or additional code written by other collaborators. Amy will wither accept the pull request, or add in some comments for things that need to be changed or fixed before your branch can be merged with the dev branch.</p>
+<p>Note: Please merge your edits with the dev branch! The master branch is for large updates only!</p>
+<p><strong>Step 6. Updating your code from the master or dev branch</strong></p>
+<p>You should regularly check whether changes have been made to the master or dev branch. Someone else might also be making changes which have been merged. You can update your code to the current master branch using the below command:</p>
+<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span> <span class="pre">origin</span> <span class="pre">master</span></code></p>
+<p>You can update your code to the current dev branch using the below command:</p>
+<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span> <span class="pre">origin</span> <span class="pre">dev</span></code></p>
+<p>It is recommended that you wait to do this until you have made a pull request with your most recent updates. This will help avoid any conflicts while pulling the branch to your computer.</p>
+</div>
+<div class="section" id="questions">
+<h2>Questions<a class="headerlink" href="#questions" title="Permalink to this heading">¶</a></h2>
+<p>As always, please use the GitHub ‘Issues’ feature if you find bugs that you are unable to fix, or otherwise have questions relating to the code structure.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="USER.html" class="btn btn-neutral float-left" title="Requirements" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="FLOWCHART.html" class="btn btn-neutral float-right" title="How the Code Functions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Amy J. Thompson, Kate M. Smith, Daniel J. Eriksson, Jack K. Clegg, Jason R. Price.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
