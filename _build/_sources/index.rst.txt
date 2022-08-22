@@ -42,7 +42,7 @@ For extended installtion guides, download the :download:`CX-ASAP Installation Gu
    :maxdepth: 2
    :caption: Github Link 
 
-   cx-asap<https://github.com/AustralianSynchrotron/cx-asap>
+   cx-asap<https://github.com/cx-asap/CX-ASAP>
 
 
 Authors
