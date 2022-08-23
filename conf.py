@@ -22,7 +22,7 @@ copyright = '2022, Amy J. Thompson, Kate M. Smith, Daniel J. Eriksson, Jack K. C
 author = 'Amy J. Thompson, Kate M. Smith, Daniel J. Eriksson, Jack K. Clegg, Jason R. Price'
 
 # The full version, including alpha/beta/rc tags
-release = '0.1.6'
+release = '1.0.0'
 
 
 # -- General configuration ---------------------------------------------------

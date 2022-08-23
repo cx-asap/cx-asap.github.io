@@ -48,10 +48,10 @@ For extended installtion guides, download the :download:`CX-ASAP Installation Gu
 Authors
 -------
 * Amy Thompson
-* Kate Smith
-* Daniel Eriksson
-* Jack Clegg
-* Jason Price
+* Dr Kate Smith
+* Dr Daniel Eriksson
+* Dr Jack Clegg
+* Dr Jason Price
 
 
 Citations
