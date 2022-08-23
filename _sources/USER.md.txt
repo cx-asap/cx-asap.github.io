@@ -82,7 +82,7 @@ If you receive errors while running a module or pipeline, you can view the error
 
 # All the different CX-ASAPs explained
 
-* CX-ASAP = name of the software package
+* CX-ASAP = name of the software package and repo name on GitHub
 * cxasap = what you type into the commandline to execute the code 
 * cx_asap = directory containing the conf.yaml file
-* cx-asap = name of the repo on GitHub
+* cx-asap = GitHub account hosting the code
