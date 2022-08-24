@@ -136,7 +136,7 @@
 <ol class="arabic simple">
 <li><p>Please don’t delete existing modules.</p></li>
 <li><p>Never edit the master branch or the dev branch - always work on your own branch (forked from the dev branch).</p></li>
-<li><p>Never merge your edits into the master branch or the dev branch - please submit your code for review (instructions included in ‘CXASAP GitHub Guide’). This is to ensure that your edits do not break other sections of the code.</p></li>
+<li><p>Never merge your edits into the master branch or the dev branch - please submit your code for review (instructions included below). This is to ensure that your edits do not break other sections of the code.</p></li>
 </ol>
 </div>
 <div class="section" id="how-to-write-a-new-module">
@@ -165,7 +165,7 @@
 <div class="section" id="how-to-contribute-your-code">
 <h2>How to contribute your code<a class="headerlink" href="#how-to-contribute-your-code" title="Permalink to this heading">¶</a></h2>
 <p><strong>CX-ASAP GitHub Structure</strong></p>
-<p>The master branch is for official releases, while the dev branch is for code that is in active development. Active contributors will each have their own branch forked from the dev branch rather than the master.</p>
+<p>The master branch is for official releases, while the dev branch is for code that is in active development. Active contributors will each have their own branch forked from the dev branch rather than the master. When you want your contributions to be combined with the software package, please create a pull request to the DEV branch (not the MAIN branch!)</p>
 <p><strong>Step 1. Clone the repository onto your computer</strong></p>
 <p>Log into your GitHub account and navigate to the <a class="reference external" href="https://github.com/AustralianSynchrotron/cx-asap">cx-asap repo</a>.</p>
 <p>Go to the green <em>code</em> button and copy the link (you will use this to clone the repository). It is recommended that you clone from the dev branch if you are actively contributing.</p>
@@ -194,8 +194,8 @@
 <p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span> <span class="pre">--global</span> <span class="pre">push.default</span> <span class="pre">current</span></code></p>
 <p>Then you can push using the below command:</p>
 <p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code></p>
-<p>Running this command will not actually change the master branch. Rather, your new branch will appear on GitHub as a separate branch.</p>
-<p><strong>Step 5. Requesting that your branch be merged into the master/dev branch</strong></p>
+<p>Running this command will not actually change the master or dev branch. Rather, your new branch will appear on GitHub as a separate branch.</p>
+<p><strong>Step 5. Requesting that your branch be merged into the dev branch</strong></p>
 <p>Your branch should be highlighted at the top with a green button that says ‘compare and pull request’. Click on this button and submit a new pull request. Otherwise you can navigate to ‘pull requests’ and set it up from scratch.</p>
 <p>In this request screen, you will need to write a small but detailed description of the changes you have made and select ‘Amy Thompson’ to be the reviewer.</p>
 <p>Once you have entered the required information, finalise the pull request, and Amy will handle the merge. This is to ensure that the additions are compatible with the dev branch and/or additional code written by other collaborators. Amy will wither accept the pull request, or add in some comments for things that need to be changed or fixed before your branch can be merged with the dev branch.</p>
