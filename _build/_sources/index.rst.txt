@@ -50,7 +50,7 @@ Authors
 * Amy Thompson
 * Dr Kate Smith
 * Dr Daniel Eriksson
-* Dr Jack Clegg
+* Prof Jack Clegg
 * Dr Jason Price
 
 
