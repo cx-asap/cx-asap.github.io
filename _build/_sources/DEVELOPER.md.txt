@@ -14,7 +14,7 @@ If you have an idea for a new module, you will need to add it into the commandli
 
 1. Please don't delete existing modules. 
 2. Never edit the master branch or the dev branch - always work on your own branch (forked from the dev branch). 
-3. Never merge your edits into the master branch or the dev branch - please submit your code for review (instructions included in 'CXASAP GitHub Guide'). This is to ensure that your edits do not break other sections of the code. 
+3. Never merge your edits into the master branch or the dev branch - please submit your code for review (instructions included below). This is to ensure that your edits do not break other sections of the code. 
 
 ## How to write a new module 
 
@@ -62,7 +62,7 @@ Finally, at the bottom of the *cxasap.py* file, add your new click command to th
 
 **CX-ASAP GitHub Structure**
 
-The master branch is for official releases, while the dev branch is for code that is in active development. Active contributors will each have their own branch forked from the dev branch rather than the master. 
+The master branch is for official releases, while the dev branch is for code that is in active development. Active contributors will each have their own branch forked from the dev branch rather than the master. When you want your contributions to be combined with the software package, please create a pull request to the DEV branch (not the MAIN branch!)
 
 **Step 1. Clone the repository onto your computer**
 
@@ -118,9 +118,9 @@ Then you can push using the below command:
 
 `git push`
 
-Running this command will not actually change the master branch. Rather, your new branch will appear on GitHub as a separate branch. 
+Running this command will not actually change the master or dev branch. Rather, your new branch will appear on GitHub as a separate branch. 
 
-**Step 5. Requesting that your branch be merged into the master/dev branch**
+**Step 5. Requesting that your branch be merged into the dev branch**
 
 Your branch should be highlighted at the top with a green button that says ‘compare and pull request’. Click on this button and submit a new pull request. Otherwise you can navigate to ‘pull requests’ and set it up from scratch.
 
