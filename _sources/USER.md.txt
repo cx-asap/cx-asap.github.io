@@ -12,8 +12,10 @@ Python requirements are listed in requirements.txt and will automatically be ins
 
  
 # Installation
+It is
+It is recommended to obtain the code directly from GitHub using git. Instructions for using git (ie to clone and switch branches) is available for download as part of the extended installation instructions ('CX_ASAP Installation Guide') which are available at https://cx-asap.github.io.
 
-You have two options to install CX-ASAP: either straight onto your computer, or into a virtual environment. It is highly recommended that you choose the virtual environment option if you are familiar with using them (or are happy to learn how to :) ) 
+Once you have the code you have two options to install CX-ASAP: either straight onto your computer, or into a virtual environment. It is highly recommended that you choose the virtual environment option if you are familiar with using them (or are happy to learn how to :) ) 
 
 First, navigate in the command line into the CX-ASAP folder (where Makefile is). 
 
@@ -25,7 +27,7 @@ If you want to install CX-ASAP into a virtual environment (remembering you will 
 
 `make install-venv`
 
-This should also be done every time you re-download the code from github! 
+This should also be done every time you re-download the code from github (ie using git pull)! 
 
 ## Additional Installation Options (Linux and Mac only) 
 
