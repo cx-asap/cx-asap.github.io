@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contributing to CX-ASAP &mdash; cxasap 1.0.0 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -123,24 +122,24 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="contributing-to-cx-asap">
+  <div class="section" id="contributing-to-cx-asap">
 <h1>Contributing to CX-ASAP<a class="headerlink" href="#contributing-to-cx-asap" title="Permalink to this heading">¶</a></h1>
 <p><em>Welcome to the CX-ASAP team!</em> To maintain our code on GitHub, we need to ensure that there are no conflicts between code versions being worked on independently by collaborators. Please read the below guidelines if you are actively contributing.</p>
-<section id="ways-to-contribute">
+<div class="section" id="ways-to-contribute">
 <h2>Ways to Contribute<a class="headerlink" href="#ways-to-contribute" title="Permalink to this heading">¶</a></h2>
 <p>Before contributing to this project, please familiarise yourself with git and be confident in its usage (see below).</p>
 <p>The main ways you can contribute to this project are by adding new modules/pipelines and fixing bugs/improving upon existing code.</p>
 <p>If you have an idea for a new module, you will need to add it into the commandline interface. This can be done by editing the file ‘cxasap.py’. Instructions for doing this are commented at the top of this script.</p>
-</section>
-<section id="rules">
+</div>
+<div class="section" id="rules">
 <h2>Rules<a class="headerlink" href="#rules" title="Permalink to this heading">¶</a></h2>
 <ol class="arabic simple">
 <li><p>Please don’t delete existing modules.</p></li>
 <li><p>Never edit the master branch or the dev branch - always work on your own branch (forked from the dev branch).</p></li>
 <li><p>Never merge your edits into the master branch or the dev branch - please submit your code for review (instructions included below). This is to ensure that your edits do not break other sections of the code.</p></li>
 </ol>
-</section>
-<section id="how-to-write-a-new-module">
+</div>
+<div class="section" id="how-to-write-a-new-module">
 <h2>How to write a new module<a class="headerlink" href="#how-to-write-a-new-module" title="Permalink to this heading">¶</a></h2>
 <p><strong>Step 1. Have a scan of the utils.py file</strong></p>
 <p>In the <em>system_files</em> folder, there is a python script called:</p>
@@ -162,8 +161,8 @@
 <p>You will then need to add a new <em>click command</em> - click is the python library used to create the commandline interface. There is a template for this at the top of the <em>cxasap.py</em> file.</p>
 <p>Make sure you fill out descriptions for your yaml parameters, and in the <em>run</em> function, create your class and call the functions from your module/pipeline. (If you are unsure, look at examples already in place for how to configure this)</p>
 <p>Finally, at the bottom of the <em>cxasap.py</em> file, add your new click command to the interface.</p>
-</section>
-<section id="how-to-contribute-your-code">
+</div>
+<div class="section" id="how-to-contribute-your-code">
 <h2>How to contribute your code<a class="headerlink" href="#how-to-contribute-your-code" title="Permalink to this heading">¶</a></h2>
 <p><strong>CX-ASAP GitHub Structure</strong></p>
 <p>The master branch is for official releases, while the dev branch is for code that is in active development. Active contributors will each have their own branch forked from the dev branch rather than the master. When you want your contributions to be combined with the software package, please create a pull request to the DEV branch (not the MAIN branch!)</p>
@@ -207,12 +206,12 @@
 <p>You can update your code to the current dev branch using the below command:</p>
 <p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span> <span class="pre">origin</span> <span class="pre">dev</span></code></p>
 <p>It is recommended that you wait to do this until you have made a pull request with your most recent updates. This will help avoid any conflicts while pulling the branch to your computer.</p>
-</section>
-<section id="questions">
+</div>
+<div class="section" id="questions">
 <h2>Questions<a class="headerlink" href="#questions" title="Permalink to this heading">¶</a></h2>
 <p>As always, please use the GitHub ‘Issues’ feature if you find bugs that you are unable to fix, or otherwise have questions relating to the code structure.</p>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>
