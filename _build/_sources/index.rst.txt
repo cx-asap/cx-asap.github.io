@@ -47,7 +47,7 @@ For extended installtion guides, download the :download:`CX-ASAP Installation Gu
 
 Authors
 -------
-* Amy Thompson
+* Dr Amy Thompson
 * Dr Kate Smith
 * Dr Daniel Eriksson
 * Prof Jack Clegg
@@ -57,5 +57,5 @@ Authors
 Citations
 ---------
 
-If you include any data or analysis output from CX-ASAP in your publications, please include a citation to the code (Thompson, A. J., Smith, K. M. L., Clegg, J. K., Price, J. R. (2022): CX-ASAP: A high throughput tool for the serial refinement and analysis of crystallographic data collected under varying conditions, ChemRxiv. Preprint. <https://doi.org/10.26434/chemrxiv-2022-7c0cl>).
+If you include any data or analysis output from CX-ASAP in your publications, please include a citation to the code (Thompson, A. J., Smith, K. M. L., Clegg, J. K., Price, J. R. (2023): CX-ASAP: A high throughput tool for the serial refinement and analysis of crystallographic data collected under varying conditions, J. Appl. Cryst, 56. <https://doi.org/10.1107/S1600576723000298>).
 
